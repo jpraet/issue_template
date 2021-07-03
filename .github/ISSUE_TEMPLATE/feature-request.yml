@@ -9,6 +9,6 @@ body:
     id: desription
     attributes:
       label: Description
-      description: "Please provide a detailed description of the requested feature."
+      description: "Please provide a clear and consise description of the requested feature."
     validations:
       required: true
