@@ -31,10 +31,10 @@ body:
       description: Can you reproduce the bug on https://try.gitea.io? If so, please provide example URL.
     validations:
       required: false
- - type: textarea
-   id: desription
-   attributes:
-     label: Description
-     description: "How do you trigger this bug? Please walk us through it step by step, and provide screenshots if applicable."
-   validations:
-     required: true
+  - type: textarea
+    id: desription
+    attributes:
+      label: Description
+      description: "How do you trigger this bug? Please walk us through it step by step, and provide screenshots if applicable."
+    validations:
+      required: true
