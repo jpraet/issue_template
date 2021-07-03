@@ -32,9 +32,9 @@ body:
     validations:
       required: false
  - type: textarea
-  id: desription
-  attributes:
-    label: Description
-    description: "How do you trigger this bug? Please walk us through it step by step, and provide screenshots if applicable."
-  validations:
-    required: true
+   id: desription
+   attributes:
+     label: Description
+     description: "How do you trigger this bug? Please walk us through it step by step, and provide screenshots if applicable."
+   validations:
+     required: true
