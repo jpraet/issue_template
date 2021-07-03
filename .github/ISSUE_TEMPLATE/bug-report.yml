@@ -1,0 +1,63 @@
+name: Bug Report
+description: File a bug report.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **NOTE:**
+        - If your issue is a security concern, please send an email to security@gitea.io instead of opening a public issue.
+        - Please take a moment to [check that your issue doesn't already exist](https://github.com/go-gitea/gitea/issues).
+  - type: input
+    id: gitea-version
+    attributes:
+      label: Gitea version
+      description: Which version (or commit ref) of Gitea are you using?
+    validations:
+      required: true
+  - type: input
+    id: git-version
+    attributes:
+      label: Git version
+      description: Which version of Git are you using?
+    validations:
+      required: false
+  - type: input
+    id: os
+    attributes:
+      label: Operating System
+      description: On which OS are you running Gitea?
+    validations:
+      required: false
+  - type: dropdown
+    id: database
+    attributes:
+      label: Database
+      description: Which database are you using?
+      options:
+        - PostgreSQL
+        - MySQL
+        - MSSQL
+        - SQLite
+    validations:
+      required: false
+  - type: input
+    id: reproduce
+    attributes:
+      label: Example URL
+      description: Can you reproduce the bug on https://try.gitea.io? If so, please provide example URL.
+    validations:
+      required: false
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      description: For issues related to the web interface, please let us know which browser you use.
+    validations:
+      required: false
+  - type: textarea
+    id: desription
+    attributes:
+      label: Description
+      description: "How do you trigger this bug? Please walk us through it step by step, and provide screenshots if applicable."
+    validations:
+      required: true
