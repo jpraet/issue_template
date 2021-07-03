@@ -4,14 +4,14 @@ body:
   - type: markdown
     attributes:
       value: |
-        NOTE: If your issue is a security concern, please send an email to security@gitea.io instead of opening a public issue
+        :warning: If your issue is a security concern, please send an email to security@gitea.io instead of opening a public issue
   - type: input
     id: version
     attributes:
       label: Gitea version
       description: Which version (or commit ref) of Gitea are you using?
     validations:
-      required: false
+      required: true
   - type: dropdown
     id: database
     attributes:
@@ -23,4 +23,18 @@ body:
         - MSSQL
         - SQLite
     validations:
+      required: true
+  - type: input
+    id: reproduce
+    attributes:
+      label: Example URL
+      description: Can you reproduce the bug on https://try.gitea.io? If so, please provide example URL.
+    validations:
       required: false
+ - type: textarea
+  id: desription
+  attributes:
+    label: Description
+    description: "How do you trigger this bug? Please walk us through it step by step, and provide screenshots if applicable."
+  validations:
+    required: true
