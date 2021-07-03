@@ -7,6 +7,7 @@ body:
         **NOTE:**
         - If your issue is a security concern, please send an email to security@gitea.io instead of opening a public issue.
         - Please take a moment to [check that your issue doesn't already exist](https://github.com/go-gitea/gitea/issues).
+        - If using a proxy or CDN (e.g. CloudFlare) in front of Gitea, please disable those services and check if the issue still persists.
   - type: input
     id: gitea-version
     attributes:
@@ -25,7 +26,7 @@ body:
     id: os
     attributes:
       label: Operating System
-      description: On which OS are you running Gitea?
+      description: On which OS are you running Gitea? How are you running Gitea? (docker, command line, systemd, ...)
     validations:
       required: false
   - type: dropdown
