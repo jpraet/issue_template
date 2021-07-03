@@ -1,0 +1,14 @@
+name: Feature Request
+description: Request a feature.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **NOTE:** Please take a moment to [check that this feature hasn't already been requested](https://github.com/go-gitea/gitea/issues).
+  - type: textarea
+    id: desription
+    attributes:
+      label: Description
+      description: "Please provide a detailed description of the requested feature."
+    validations:
+      required: true
